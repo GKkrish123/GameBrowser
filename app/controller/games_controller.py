@@ -50,8 +50,8 @@ def edit_game_controller(game_details):
                 Games.gameid != game_details["gameid"],
                 Games.title == game_details["title"]
             ]
-            game_details = Games().fetch(game_duplicate_filter).first()
-            if game_details:
+            game = Games().fetch(game_duplicate_filter).first()
+            if game:
                 return get_response("GAME_ERR006", None, 409)
         game_filter = [
             Games.gameid == game_details.pop("gameid")
