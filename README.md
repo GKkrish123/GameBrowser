@@ -6,7 +6,7 @@
   1. Visual Studio Code (`https://code.visualstudio.com/download`)
   2. Python (`https://www.python.org/downloads/`)
   3. SQL Server (Example: MySQL,PostgreSQL) (Tested with MySQL)
-  4. Clone this repository into VSCode, open the CMD terminal in the installed path (inside the `VehicleRental` folder)
+  4. Clone this repository into VSCode, open the CMD terminal in the installed path (inside the `GameBrowser` folder)
   5. Install `pipenv` by running the command `pip install pipenv`
   5. Create virtual environment by running the command `pipenv shell`
   6. Run the command `pipenv install --dev --skip-lock` to install all Python dependencies.
