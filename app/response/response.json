@@ -1,0 +1,29 @@
+{
+    "responseCodeData": {
+        "succCode": {
+            "GAME_RES001": "game details fetched successfully",
+            "GAME_RES002": "game added successfully",
+            "GAME_RES003": "game updated successfully",
+            "GAME_RES004": "game deleted successfully",
+            "MOCK_RES001": "Mock database tables added successfully",
+            "MOCK_RES002": "Mock database tables deleted successfully",
+            "LOGIN_RES001": "Logged in successfully",
+            "SIGNUP_RES001": "Signed up successfully"
+        },
+        "errCode": {
+            "GAME_ERR001": "Error in fetching game details",
+            "GAME_ERR002": "Error in adding game",
+            "GAME_ERR003": "Error in updating game",
+            "GAME_ERR004": "Error in deleting game",
+            "GAME_ERR005": "No data found for games",
+            "GAME_ERR006": "Game title already exists",
+            "MOCK_ERR001": "Error in adding mock database tables",
+            "MOCK_ERR002": "Error in deleting mock database tables",
+            "LOGIN_ERR001": "Permission denied!",
+            "LOGIN_ERR002": "Error in login",
+            "LOGIN_ERR003": "Invalid credentials!",
+            "SIGNUP_ERR001": "Error in Signup",
+            "SIGNUP_ERR002": "Username already exists"
+        }
+    }
+}
