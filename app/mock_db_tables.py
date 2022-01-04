@@ -1,3 +1,4 @@
+from urllib.parse import quote
 from sqlalchemy import create_engine
 from sqlalchemy import Column, String, Integer, Boolean
 from sqlalchemy.ext.declarative import declarative_base
@@ -13,7 +14,7 @@ from config import (
 )
 
 db_string = (
-    f"{SQL_DB_SYSTEM}://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_SERVER}"
+    f"{SQL_DB_SYSTEM}://{DB_USERNAME}:{quote(DB_PASSWORD)}@{DB_HOST}:{DB_PORT}/{DB_SERVER}"
 )
 
 db = create_engine(db_string)

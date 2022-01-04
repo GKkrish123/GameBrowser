@@ -1,3 +1,4 @@
+from urllib.parse import quote
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from config import (
@@ -10,7 +11,7 @@ from config import (
 )
 
 DB_URL = (
-    f"{SQL_DB_SYSTEM}://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_SERVER}"
+    f"{SQL_DB_SYSTEM}://{DB_USERNAME}:{quote(DB_PASSWORD)}@{DB_HOST}:{DB_PORT}/{DB_SERVER}"
 )
 db_engine = None
 session = None

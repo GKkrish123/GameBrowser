@@ -34,8 +34,8 @@ def add_game_controller(game_details):
         game_duplicate_filter = [
             Games.title == game_details["title"]
         ]
-        game_details = Games().fetch(game_duplicate_filter).first()
-        if game_details:
+        game = Games().fetch(game_duplicate_filter).first()
+        if game:
             return get_response("GAME_ERR006", None, 409)
         add_game_details = Games().add(game_details)
         add_game_details.__dict__.__delitem__('_sa_instance_state')
